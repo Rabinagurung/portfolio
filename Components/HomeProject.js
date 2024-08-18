@@ -12,17 +12,21 @@ const HomeProject = ({ currentTheme, project, id }) => {
         borderRadius: id % 2 === 0 ? '50px 0 0 0' : '0 0 50px 0'
       }}>
       <div className={styles.projectContent}>
-        <div
-          className={styles.projectIcon}
-          style={{
-            color: currentTheme.accent,
-            backgroundColor: currentTheme.footerColor,
-            borderColor: currentTheme.accent
-          }}>
-          <Link passHref href={project.projectLink}>
+        <Link
+          passHref
+          href={project.projectLink}
+          target='_blank'
+          rel='noopener noreferrer'>
+          <div
+            className={styles.projectIcon}
+            style={{
+              color: currentTheme.accent,
+              backgroundColor: currentTheme.footerColor,
+              borderColor: currentTheme.accent
+            }}>
             <FontAwesomeIcon icon={faTelegramPlane} />
-          </Link>
-        </div>
+          </div>
+        </Link>
         <h1 className={styles.projectTitle}>{project.name}</h1>
         <h2
           className={styles.projectSubTitle}

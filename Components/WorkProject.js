@@ -125,7 +125,11 @@ const WorkProject = ({ currentTheme, project, id }) => {
                   borderColor: currentTheme.subtext
                 }}>
                 {project.githubLink !== '' ? (
-                  <Link passHref href={project.githubLink}>
+                  <Link
+                    passHref
+                    href={project.githubLink}
+                    target='_blank'
+                    rel='noopener noreferrer'>
                     <FontAwesomeIcon icon={faGithubAlt} />
                   </Link>
                 ) : (
@@ -134,23 +138,27 @@ const WorkProject = ({ currentTheme, project, id }) => {
               </div>
             </Tooltip>
             <Tooltip label='Project link' placement='right'>
-              <div
-                className={styles.socialIcon}
-                style={{
-                  color: currentTheme.subtext,
-                  borderColor: currentTheme.subtext
-                }}>
-                {project.projectLink !== '' ? (
-                  <Link passHref href={project.projectLink} _target>
+              <Link
+                passHref
+                href={project.projectLink}
+                target='_blank'
+                rel='noopener noreferrer'>
+                <div
+                  className={styles.socialIcon}
+                  style={{
+                    color: currentTheme.subtext,
+                    borderColor: currentTheme.subtext
+                  }}>
+                  {project.projectLink !== '' ? (
                     <FontAwesomeIcon icon={faTelegramPlane} />
-                  </Link>
-                ) : (
-                  <FontAwesomeIcon
-                    icon={faTelegramPlane}
-                    onClick={showProjToast}
-                  />
-                )}
-              </div>
+                  ) : (
+                    <FontAwesomeIcon
+                      icon={faTelegramPlane}
+                      onClick={showProjToast}
+                    />
+                  )}
+                </div>
+              </Link>
             </Tooltip>
           </div>
         </div>
