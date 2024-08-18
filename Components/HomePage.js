@@ -34,7 +34,7 @@ const HomePage = ({ currentTheme }) => {
         <h1 className={styles.workheading} data-aos='fade-up'>
           {headings.workHomePage}
         </h1>
-        {projects.slice(0, 3).map((project, key) => {
+        {projects.map((project, key) => {
           return (
             <div key={key} data-aos='fade-up'>
               <HomeProject

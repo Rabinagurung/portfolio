@@ -60,9 +60,9 @@ const WorkProject = ({ currentTheme, project, id }) => {
         <div className={styles.cardtitle}>
           <h1 className={styles.projtitle}>{project.name}</h1>
           <HStack spacing={2}>
-            {project.tech.map((tech) => {
+            {project.tech.map((tech, key) => {
               return (
-                <div key={tech}>
+                <div key={key}>
                   <Tag
                     size='sm'
                     borderRadius='md'

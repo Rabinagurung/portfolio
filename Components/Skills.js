@@ -12,7 +12,7 @@ const Skills = ({ currentTheme }) => {
         {userinfo.capabilities
           ? userinfo.capabilities.map((value, key1) => {
               return (
-                <>
+                <div key={key1}>
                   <ul className={styles.skillList} data-aos='fade-up'>
                     <h1
                       className={styles.skillHeading}
@@ -32,7 +32,7 @@ const Skills = ({ currentTheme }) => {
                       style={{ backgroundColor: currentTheme.subtext }}
                       data-aos='fade-up'></div>
                   )}
-                </>
+                </div>
               );
             })
           : null}
