@@ -19,15 +19,6 @@ export const projects = [
     photo: [DUO_1, DUO_2, DUO_3]
   },
   {
-    name: 'Prismatics',
-    description:
-      'Prismatics is a sophisticated React Native application designed for wallpaper enthusiasts who crave high-quality images for their devices. Utilizing the Wallhaven API, this app ensures a seamless experience in discovering, downloading, and setting wallpapers.',
-    githubLink: 'https://github.com/Rabinagurung/Prismatics',
-    projectLink: 'https://github.com/Rabinagurung/Prismatics',
-    tech: ['React Native', 'Wallhaven API', 'Firebase', 'Firestore'],
-    photo: [PRISMA_1, PRISMA_1, PRISMA_1]
-  },
-  {
     name: 'Easy Rider',
     description:
       'Easy Rider is a React Native application designed for luxury car enthusiasts. This app allows users to book luxury cars for special occasions, such as weddings, proms, and corporate events. Easy Rider features a user-friendly interface and a seamless booking process, providing a premium experience for users.',
@@ -35,5 +26,14 @@ export const projects = [
     projectLink: 'https://github.com/Rabinagurung/INFO-6132--01--lab-04',
     tech: ['React Native', 'Firebase', 'Firestore', 'Expo'],
     photo: [LUX_1, LUX_2, LUX_3]
+  },
+  {
+    name: 'Prismatics',
+    description:
+      'Prismatics is a sophisticated React Native application designed for wallpaper enthusiasts who crave high-quality images for their devices. Utilizing the Wallhaven API, this app ensures a seamless experience in discovering, downloading, and setting wallpapers.',
+    githubLink: 'https://github.com/Rabinagurung/Prismatics',
+    projectLink: 'https://github.com/Rabinagurung/Prismatics',
+    tech: ['React Native', 'Wallhaven API', 'Firebase', 'Firestore'],
+    photo: [PRISMA_1, PRISMA_1, PRISMA_1]
   }
 ];
