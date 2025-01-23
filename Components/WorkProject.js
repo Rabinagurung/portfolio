@@ -90,31 +90,35 @@ const WorkProject = ({ currentTheme, project, id }) => {
               src={project.photo[index]}
               alt='thumbnail image'
               height='300'
-              width='500'
+              width={800}
               objectFit='cover'
             />
-            <button
-              onClick={back}
-              style={{
-                position: 'absolute',
-                top: '50%',
-                left: '10px',
-                color: 'black',
-                fontSize: '20px'
-              }}>
-              &lt;
-            </button>
-            <button
-              onClick={ahead}
-              style={{
-                position: 'absolute',
-                top: '50%',
-                right: '10px',
-                color: 'black',
-                fontSize: '20px'
-              }}>
-              &gt;
-            </button>
+            {project.photo.length > 1 && (
+              <>
+                <button
+                  onClick={back}
+                  style={{
+                    position: 'absolute',
+                    top: '50%',
+                    left: '10px',
+                    color: 'black',
+                    fontSize: '20px'
+                  }}>
+                  &lt;
+                </button>
+                <button
+                  onClick={ahead}
+                  style={{
+                    position: 'absolute',
+                    top: '50%',
+                    right: '10px',
+                    color: 'black',
+                    fontSize: '20px'
+                  }}>
+                  &gt;
+                </button>
+              </>
+            )}
           </div>
           <div>
             <Tooltip label='Github link' placement='right'>

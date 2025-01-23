@@ -6,9 +6,30 @@ import LUX_1 from '../styles/projects/LUX_1.png';
 import LUX_2 from '../styles/projects/LUX_2.png';
 import LUX_3 from '../styles/projects/LUX_3.png';
 
+import WO_CLIENT from '../styles/projects/wo_client.png';
+import WO_ADMIN from '../styles/projects/wo_admin.png';
+
 import PRISMA_1 from '../styles/projects/PRISMA_1.png';
 
 export const projects = [
+  {
+    name: 'The Wild Oasis - Client',
+    description:
+      'Developed a full-stack customer platform for booking hotel rooms, designed specifically for hotel guests. The platform enables users to view available rooms, make bookings, and manage their reservations, providing a seamless booking experience.',
+    githubLink: 'https://github.com/Rabinagurung/The-Wild-Oasis',
+    projectLink: 'https://the-wild-oasis-five-dusky.vercel.app',
+    tech: ['Nextjs', 'Authjs', 'Tailwind', 'Supabase'],
+    photo: [WO_CLIENT]
+  },
+  {
+    name: 'The Wild Oasis - Admin',
+    description:
+      'Developed a full-stack admin platform for managing hotel bookings, designed specifically for hotel administrators. The platform enables seamless viewing, editing, and tracking of bookings, improving operational efficiency.',
+    githubLink: 'https://github.com/Rabinagurung/The-Wild-Oasis',
+    projectLink: 'https://wild-oasis-alpha-one.vercel.app',
+    tech: ['Reactjs', 'React Query', 'Supabase'],
+    photo: [WO_ADMIN]
+  },
   {
     name: 'Duolingo',
     description:
